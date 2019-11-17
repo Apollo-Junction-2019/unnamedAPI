@@ -30,6 +30,5 @@ class chatGamesViewSet(viewsets.ModelViewSet):
     queryset = chatGames.objects.all()
     serializer_class = chatGamesSerializer
 
-def home(request, template_name="example_app/templates/home.html"):
-    context = {'title': 'Apollo Chatbot v1.0'}
-    return render_to_response(template_name, context)
+def home(requests):
+    return render(requests, 'example_app/templates/home.html')
