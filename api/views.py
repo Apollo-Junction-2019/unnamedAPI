@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 
 from rest_framework import status
 from rest_framework import viewsets
@@ -29,3 +29,7 @@ class chatGamesViewSet(viewsets.ModelViewSet):
     """
     queryset = chatGames.objects.all()
     serializer_class = chatGamesSerializer
+
+def home(request, template_name="example_app/templates/home.html"):
+    context = {'title': 'Apollo Chatbot v1.0'}
+    return render_to_response(template_name, context)
