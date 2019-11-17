@@ -198,7 +198,7 @@ while x < 10:
     ])
     trainer.train([
     'USB',
-    'USB stands for Universal Serial Bus. It is a method of connecting computers to external devices like cameras. Read more: http://www.swarthmore.edu/Documents/administration/its/How%20to%20Use%20a%20USB%20Flash%20Drive.pdf',
+    'So, is that some name for a cool music band? Haha, joking. Ok, lets be serious now. USB stands for Universal Serial Bus. It is a method of connecting computers to external devices like cameras. Read more: http://www.swarthmore.edu/Documents/administration/its/How%20to%20Use%20a%20USB%20Flash%20Drive.pdf',
     ])
     trainer.train([
     'Virus',
@@ -206,4 +206,50 @@ while x < 10:
     'World Wide Web',
     'The World Wide Web is an information system on the Internet that allows hypertext documents to be connected with hyperlinks. Read more: http://www.ou.edu/research/electron/internet/www.htm ',
     ])
+    trainer.train([
+    'World Wide Web, WWW',
+    'The World Wide Web is an information system on the Internet that allows hypertext documents to be connected with hyperlinks. Read more: http://www.ou.edu/research/electron/internet/www.htm ',
+    ])
+    trainer.train([
+    'How to safely browse online?',
+    'I totally understand you, bro. Let me explain... <br> The sense of reality often tends to fail when we’re surfing online. It is easy to get lost in the cyber world and forget that it is just as real as everything else in our lives. But rules of conduct and expectations on how people should behave are the same online and in the real world. There are many things you can do yourself to increase your online safety.<br>Do to others as you would have them do to you. Bullying other people online is a malicious act which affects both the bully and the bullied. Pranks can also turn bad, and it might be hard to stop a prank once it has spread across the Internet.<br>Don’t let your friends influence your decisions and principles. When you surf online together with your friends, don’t do things you wouldn’t do alone or in the public.<br>When you see something disturbing, for example hate speech or call for violence, talk to your parents/guardians, teachers, or school psychologist.<br>Read more about safe browsing here: https://greatestcourage.ee/',
+    ])
+    trainer.train([
+    'What does Apollo mean?',
+    'Apollo, its me!<br>But there was actually one story there that made me so called. Apollo is the ancient Greek God of Healing, Light, Truth, Medicine, and Music. One of his most important jobs was to bring up the sun every day. Like his sister, he was a great archer, and often carried a silver bow.<br>So am I, lighting up new knowledge that you could feel more comfortable every day.'
+    ])
+    trainer.train([
+    'Use strong passwords',
+    'Make sure to include uppercase and lowercase letters, numbers and symbols. Do not use combinations that can be easily guessed – for example, many people know your birthday. Do not use the same password for multiple accounts, because if one account is hacked you may lose control over your virtual identity. Do not share your passwords with anyone, even with your closest friends and family members. The more people know your passwords, the more likely they will leak..'
+    ])
+    trainer.train([
+    'Internet anonymity',
+    'Keep in mind that there is no such thing as absolute Internet anonymity. Even if you don’t use your real name of you’ve deleted old photos, videos, or comments, it is possible to find out what device you have previously used or use currently for surfing online. Also, capturing screenshots is very easy, and thus make sure not to post anything you don’t want to go public.'
+    ])
+    trainer.train([
+    'Protect yourself and your devices online',
+    'Internet in full of malware that can cause havoc in your devices or use them to spread viruses. It is worth knowing that sometimes you can catch a virus from a website you use daily and which you think is safe. Using antivirus software in your phone and PC is the best protection against viruses. Protecting your devices doesn’t have to cost anything - many antiviruses are free. However, be careful installing any kind of software, including antiviruses - some viruses mask themselves as antiviruses.'
+    ])
+    trainer.train([
+    'Malcious file download',
+    'Be careful when sharing files, opening letters/attachments and downloading files – you may end up with a virus, malware, or content which is not age-appropriate or downright illegal. This may happen even when your antivirus is up and running.'
+    ])
+    trainer.train([
+    'I saw the cyberbulling!',
+    'Do to others as you would have them do to you, both in the real world and in cyberspace. A simple prank might turn into a nightmare for both the bully and the bullied. Also, keep in mind that once the post is published, it may go viral very quickly, and it might be impossible to stop it. <br>Think about whether your online self reflects who you really are. Do you want to be remembered as a bully whose words and actions have actually hurt someone? <br> All conflicts or arguments cannot be considered as bullying. However, changing the subject on purpose and using condescending tricks to win arguments, create embarrassing situations or influence friendships is usually stressful for all parties. Thus, if there is a motive to hurt the other party with words or something else, then this constitutes as bullying. The greatest courage is not to follow your friends by doing things you wouldn’t do alone or in the public. Stand by your principles, and if necessary, don’t be a bystander when you see something that crosses the boundaries of politeness. <br> Don’t be a bystander when you see someone bullied at school or online. If you don’t do anything to intervene, you might unwillingly help to normalize the behavior. Keep in mind that you can do a lot of good by helping the bullied – support, comfort, and help means a lot more to the victim than you might imagine. It is quite understandable than taking a stand might seem scary – if you need advice or encouragement talk to someone you trust.'
+    ])
+    trainer.train([
+    'bulling, help',
+    'Call the free Child Helpline 116 111 (the line is open 24/7) or send an email to info@lasteabi.ee (the reply is sent as soon as possible, but not later than in five business days).'
+    ])
+    trainer.train([
+    'How to recognize cyberbullying?',
+    'Some advises from Apollo! <br> <li>Sending threatening or mean letters, text messages, etc. more than once. <li>Scamming personal information, pictures/videos and spreading them across the Internet without consent. <li>Posing as someone else online, breaching trust (e.g. breaking in someone’s email account, using false identity, spreading false information via emails and text messages, and other damaging and humiliating actions). <li>Creating an online space (e.g. website, chatroom) or content to make fun of classmates, or to condescend them, or to fuel hate and animosity. <li>If above mentioned actions involve several bullies and their actions are coordinated and deliberate.'
+    ])
+    trainer.train([
+    'How to recognize cyberbullying?',
+    'Some advises from Apollo! <br> <li>Sending threatening or mean letters, text messages, etc. more than once. <li>Scamming personal information, pictures/videos and spreading them across the Internet without consent. <li>Posing as someone else online, breaching trust (e.g. breaking in someone’s email account, using false identity, spreading false information via emails and text messages, and other damaging and humiliating actions). <li>Creating an online space (e.g. website, chatroom) or content to make fun of classmates, or to condescend them, or to fuel hate and animosity. <li>If above mentioned actions involve several bullies and their actions are coordinated and deliberate.'
+    ])
+
+    
     x = x+1
