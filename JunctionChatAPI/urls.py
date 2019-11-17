@@ -20,13 +20,14 @@ from django.urls import path
 from rest_framework import routers
 from api import views
 from django.conf.urls import include
+from django.views.decorators.csrf import csrf_exempt
 router = routers.DefaultRouter()
 router.register(r'options', views.chatAnswerViewSet)
 router.register(r'messages', views.chatMessagesViewSet)
 router.register(r'games', views.chatGamesViewSet)
 
-
 urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))]
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('chatbot/', csrf_exempt(views.chatBotViewSet.as_view()), name="chatbot")]

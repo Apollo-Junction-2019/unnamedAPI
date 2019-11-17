@@ -1,10 +1,9 @@
 from django.db import models
-import jsonfield
-
+from jsonfield import JSONField
 # Create your models here.
 
 class chatMessages(models.Model):
-    message = jsonfield.JSONField()
+    message = JSONField()
 
 class chatAnswers(models.Model):
 
