@@ -1,6 +1,6 @@
 from chatterbot import *
-from chatterbot.comparisons import JaccardSimilarity
-from chatterbot.response_selection import get_most_frequent_response
+from chatterbot.comparisons import LevenshteinDistance
+from chatterbot.response_selection import get_first_response
 import chatterbot
 from chatterbot.trainers import ListTrainer
 from chatterbot.trainers import ChatterBotCorpusTrainer
@@ -14,12 +14,18 @@ chatbot = ChatBot("Apollo",
                       {
                           "import_path": "chatterbot.logic.BestMatch",
                           'default_response': 'I am sorry, but I do not understand.',
-                          'maximum_similarity_threshold': 0.65,
-                          "statement_comparison_function": JaccardSimilarity,
-                          "response_selection_method": get_most_frequent_response
+                          'maximum_similarity_threshold': 0.55,
+                          "statement_comparison_function": LevenshteinDistance,
+                          "response_selection_method": get_first_response
                       }
                   ],
                   read_only=False)
+trainer = ChatterBotCorpusTrainer(chatbot)
+
+trainer.train(
+    "chatterbot.corpus.english.greetings",
+    "chatterbot.corpus.english.conversations"
+)
 trainer = ListTrainer(chatbot)
 
 trainer.train([
@@ -31,6 +37,7 @@ trainer.train([
     'Thank you',
     'You are welcome.',
 ])
+
 x = 0
 while x < 10:
     trainer.train([
