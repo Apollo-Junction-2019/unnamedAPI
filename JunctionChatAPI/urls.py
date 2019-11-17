@@ -21,6 +21,7 @@ from rest_framework import routers
 from api import views
 from django.conf.urls import include
 router = routers.DefaultRouter()
+router.register(r'app', views.home)
 router.register(r'options', views.chatAnswerViewSet)
 router.register(r'messages', views.chatMessagesViewSet)
 router.register(r'games', views.chatGamesViewSet)
